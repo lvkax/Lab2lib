@@ -78,32 +78,32 @@ namespace Lab2
                 arrPhones[i] = YourPhone;
             }
 
-            foreach (Phone t in arrPhones)
-            {
-                Console.WriteLine();
-                Console.WriteLine("Данi про об'ект: ");
-                Console.WriteLine("----------------------------------------------------------------------------");
-                Console.WriteLine("Фiрма: " + t.Name);
-                Console.WriteLine("Модель: " + t.Model);
-                Console.WriteLine($"Цiна:  + {t.Model} доларів");
-                Console.WriteLine("Рiк випуску: " + t.ReleaseYear);
-                Console.WriteLine("Рiк покупки: " + t.YearOfPurchase);
-                Console.WriteLine("Процессор: " + t.ProcessorName);
-                Console.WriteLine("Кiлькiсть ядер: " + t.AmountOfCores);
-                Console.WriteLine($"Ємнiсть акамулятора:  {t.BatteryCapacity}мA/г");
-                Console.WriteLine($"Кiлькiсть пам'ятi: " + t.AmountOfMemory);
-                Console.WriteLine($"Кiлькiсть оперативноi пам'ятi: {t.AmountOfRAM}Гб ");
-                Console.WriteLine($"Дiагональ екрану: {t.Diagonal} дюймiв");
-                Console.WriteLine(t.Has3Cameras ?
-                "Має три або бiльше камер " : "Має меньше трьох камер");
-                Console.WriteLine(t.HasWirelessCharging ?
-                "Телефон має бездротову зарядку" : "Не має бездротовоi зарядки");
-                if (t.GaranteEndingYear >= 2023) Console.WriteLine
-                        ($"Гарантiя закiнчується в {t.GaranteEndingYear} роцi ");
-                else Console.WriteLine($"Гарантiя закiнчилась в {t.GaranteEndingYear} роцi ");
-                Console.WriteLine("\n \n Виконав: Лiвак Саша 2IСТ-23б");
-                Console.ReadKey();
-            }
+                foreach (Phone t in arrPhones)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("Данi про об'ект: ");
+                    Console.WriteLine("----------------------------------------------------------------------------");
+                    Console.WriteLine("Фiрма: " + t.Name);
+                    Console.WriteLine("Модель: " + t.Model);
+                    Console.WriteLine($"Цiна:  + {t.Model} доларів");
+                    Console.WriteLine("Рiк випуску: " + t.ReleaseYear);
+                    Console.WriteLine("Рiк покупки: " + t.YearOfPurchase);
+                    Console.WriteLine("Процессор: " + t.ProcessorName);
+                    Console.WriteLine("Кiлькiсть ядер: " + t.AmountOfCores);
+                    Console.WriteLine($"Ємнiсть акамулятора:  {t.BatteryCapacity}мA/г");
+                    Console.WriteLine($"Кiлькiсть пам'ятi: " + t.AmountOfMemory);
+                    Console.WriteLine($"Кiлькiсть оперативноi пам'ятi: {t.AmountOfRAM}Гб ");
+                    Console.WriteLine($"Дiагональ екрану: {t.Diagonal} дюймiв");
+                    Console.WriteLine(t.Has3Cameras ?
+                    "Має три або бiльше камер " : "Має меньше трьох камер");
+                    Console.WriteLine(t.HasWirelessCharging ?
+                    "Телефон має бездротову зарядку" : "Не має бездротовоi зарядки");
+                    if (t.GaranteEndingYear >= 2023) Console.WriteLine
+                            ($"Гарантiя закiнчується в {t.GaranteEndingYear} роцi ");
+                    else Console.WriteLine($"Гарантiя закiнчилась в {t.GaranteEndingYear} роцi ");
+                }
+            Console.WriteLine("\n \n Виконав: Лiвак Саша 2IСТ-23б");
+            Console.ReadKey();
         }
     }
 }
